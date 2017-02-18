@@ -1,0 +1,11 @@
+<?php
+$connection=mysql_connect("localhost","root","1234");
+	
+if(!$connection){
+	die("connection failed".mysql.error());
+}
+$db_select=mysql_select_db("repository",$connection);
+if(!$db_select){
+	die("DB selection failed".mysql.error());
+}
+?>
